@@ -1,0 +1,25 @@
+@CHARSET "ISO-8859-1";
+
+div.choise {
+	float: left;
+}
+
+img.choise {
+	height: 100px;
+	width: 150px;
+}
+
+
+
+.border {
+	margin: 2px;
+	color: black;
+}
+
+.border:hover {
+	border: solid black 2px;
+	font-color: black;
+	color: black;
+	margin: 0;
+
+}

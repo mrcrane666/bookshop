@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+	version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+	id="com.ibm.bookshop.BookShopPortlet.cdf86f5885">
+	<portlet>
+		<portlet-name>BookShop</portlet-name>
+		<display-name>BookShop</display-name>
+		<display-name xml:lang="de">BookShop</display-name>
+		<portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
+		<init-param>
+			<name>wps.markup</name>
+			<value>html</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit</portlet-mode>
+			<portlet-mode>edit_defaults</portlet-mode>
+		</supports>
+		<supported-locale>de</supported-locale>
+		<resource-bundle>com.ibm.bookshop.nl.BookShopPortletResource</resource-bundle>
+		<portlet-info>
+			<title>BookShop</title>
+			<short-title>BookShop</short-title>
+			<keywords>BookShop</keywords>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<portlet-name>BookDetails</portlet-name>
+		<display-name>BookDetails</display-name>
+		<display-name xml:lang="de">BookDetails</display-name>
+		<portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
+		<init-param>
+			<name>wps.markup</name>
+			<value>html</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>de</supported-locale>
+		<resource-bundle>com.ibm.bookshop.nl.BookShopPortletResource</resource-bundle>
+		<portlet-info>
+			<title>BookDetails</title>
+			<short-title>BookDetails</short-title>
+			<keywords>BookDetails</keywords>
+		</portlet-info>
+	</portlet>
+	<portlet>
+		<portlet-name>News</portlet-name>
+		<display-name>News</display-name>
+		<display-name xml:lang="de">News</display-name>
+		<portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
+		<init-param>
+			<name>wps.markup</name>
+			<value>html</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>config</portlet-mode>
+		</supports>
+		<supported-locale>de</supported-locale>
+		<resource-bundle>com.ibm.bookshop.nl.BookShopPortletResource</resource-bundle>
+		<portlet-info>
+			<title>News</title>
+			<short-title>News</short-title>
+			<keywords>News</keywords>
+		</portlet-info>
+	</portlet>
+	<custom-portlet-mode>
+		<description>Admin edit mode</description>
+		<portlet-mode>config</portlet-mode>
+	</custom-portlet-mode>
+	<custom-portlet-mode>
+		<description>shared edit mode</description>
+		<portlet-mode>edit_defaults</portlet-mode>
+	</custom-portlet-mode>
+
+	<default-namespace>http://BookShop/</default-namespace>
+</portlet-app>

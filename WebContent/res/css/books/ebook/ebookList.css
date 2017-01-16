@@ -1,0 +1,24 @@
+@CHARSET "ISO-8859-1";
+th.tbl, td.tbl {
+    padding: 15px;
+    text-align: left;
+}
+
+table.tbl {
+    border-collapse: collapse;
+}
+
+ th.tbl, td.tbl {
+    border: 1px solid black;
+}
+td.noBorder{
+	border:none;
+}
+.btn{
+	margin-top: 5px;
+}
+
+.readImg{
+	height: 30px;
+	width: 30px;
+}
